@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard - Tikamus</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../asset/img/logo.svg" type="image/x-icon">
+    <!-- Estilos generales de la página -->
+    <link rel="stylesheet" href="../asset/js/app.js">
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Estilos específicos de la página -->
+    <link rel="stylesheet" href="../asset/css/perfil.css">
+</head>
+
+<body>
+    <div class="layout-wrapper layout-content-navbar d-flex flex-column">
+        <div class="layout-container">
+            <!-- Menu -->
+
+
+            <!-- Layout container -->
+            <div class="layout-page ">
+                <!-- Navbar -->
+
+                <nav class="navbar d-flex justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="../asset/img/TikamusVol1 solo.svg" alt="">
+                    </a>
+                </nav>
+
+                <div class="container__principal">
+                    <div class="mi__perfil">
+                        <h1>mi perfil</h1>
+                        <div class="icon__perfil">
+                            <img src="../asset/img/ayuda.svg" alt="">
+                            <img src="../asset/img/ajuste.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="section__perfil">
+                        <img src="../asset/img/author.png" alt="">
+                        <div class="container__text__author">
+
+                            <div class="text__img__perfil">
+                                <h3>Hola,Cristian</h3>
+                                <img src="../asset/img/vector.svg" alt="">
+                            </div>
+
+                            <div class="container__perfil">
+                                <div class="perfil__ir">
+                                    <p data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><u>Mi perfil</u></p>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div style="width:100%; margin-top:3rem; padding:1rem; display:flex; flex-direction:column; text-align:left;">
+                                                        <img src="../asset/img/author.png" style="width: 5rem; height: auto; margin-bottom: 10px;" alt="">
+                                                        <p style="margin-left:15px;">editar</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <form class="formulario" action="" style="width:100%; display:flex; flex-direction:column; border-radius:15px;  gap:1rem; text-aling-left; margin-top:1rem; justify-content: flex-start;">
+
+                                                            <label for="">Nombre</label>
+                                                            <input style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Cristian Villamizar">
+
+                                                            <label for="">E-mail</label>
+                                                            <input style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="cristian.villamizar@email.com">
+
+                                                            <label for="">Meta/Objetivo principal</label>
+                                                            <input style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Mi objetivo es...">
+
+                                                            <label for="">Edad</label>
+                                                            <input style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Mi edad">
+
+                                                            <label for="">Nivel</label>
+                                                            <select name="nivel" id="nivel" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="principiante">Principiante</option>
+                                                                <option value="intermedio">Intermedio</option>
+                                                                <option value="avanzado">Avanzado</option>
+
+                                                            </select>
+
+                                                            <label for="">Duración diaria practica</label>
+                                                            <select name="diario" id="diario" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="principiante">diario</option>
+
+
+                                                            </select>
+
+                                                            <label for="">Consentimiento</label>
+                                                            <select name="consentimiento" id="consentimiento" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="principiante">Consentimiento</option>
+
+
+                                                            </select>
+
+                                                            <label for="">Alarma de práctica</label>
+                                                            <select name="Alarma" id="alarma" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="principiante">Alarma practica</option>
+
+                                                            </select>
+
+                                                            <label for="">Notificación push</label>
+                                                            <select name="notificacion" id="notificacion" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="principiante">notificaion push y por correo</option>
+
+
+                                                            </select>
+
+                                                            <label for="">Idioma</label>
+                                                            <select name="español" id="español" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="español">Español</option>
+                                                                <option value="portugues">Portugues</option>
+                                                                <option value="italiano">Italiano</option>
+
+                                                            </select>
+
+                                                            <label for="">versiones</label>
+                                                            <select name="versiones" id="versiones" style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;" type="text" placeholder="Principiante, intermedio, avanzado..">
+                                                                <option value="">Selecciona una opción</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+
+                                                            </select>
+
+                                                        </form>
+
+
+                                                    </div>
+
+                                                    <div style="width:100%; padding:1rem; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1rem; margin-top:2rem;">
+                                                        <button style="height:3rem;background-color:transparent; width:100%; border:1px solid; border-radius:15px">Cerrar sesión</button>
+                                                        <button style="height:3rem;background-color:transparent; width:100%; border:1px solid; border-radius:15px">Términos y privacidad</button>
+                                                        <button style="height:3rem;background-color:transparent; width:100%; border:1px solid red; color:red;  border-radius:15px">Borrar la cuenta</button>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="icon__perfil" src="../asset/img/perfil.png" alt="">
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="container__logros">
+                        <div class="logros">
+                            <div class="items"> <img class="icon__perfil alinear"
+                                    src="../asset/img/vector3.svg" alt="">
+                                <div class="box">
+                                    <p class="box__numb">6</p>
+                                </div>
+                            </div>
+                            <div class="items"> <img class="icon__perfil alinear"
+                                    src="../asset/img/certificado.svg" alt="">
+                                <div class="box">
+                                    <p class="box__numb">6</p>
+                                </div>
+                            </div>
+
+                            <div class="items"> <img class="icon__perfil alinear"
+                                    src="../asset/img/estrellas.svg" alt="">
+                                <div class="box">
+                                    <p class="box__numb">6</p>
+                                </div>
+                            </div>
+
+                            <div class="items"> <img class="icon__perfil alinear"
+                                    src="../asset/img/info-bold.svg" alt="">
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="container__3">
+
+                        <div class="principal__card">
+                            <div class="img__text">
+                                <img class="oveja" src="../asset/img/oveja 2.svg" alt="">
+
+                            </div>
+
+                            <div class="img__text__2">
+
+                                <div class="text__p">
+
+                                    <p><span>Practica cada día</span> para que tu racha no reinicie</p>
+                                </div>
+                                <img class="off" src="../asset/img/off.svg" alt="">
+
+                            </div>
+                        </div>
+
+                        <div class="semana">
+                            <div class="dia">
+                                <p>Lun</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Mar</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Mier</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Jue</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Vie</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Sab</p>
+                                <div class="box__day"></div>
+                            </div>
+
+                            <div class="dia">
+                                <p>Dom</p>
+                                <div class="box__day"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="container__2">
+
+                    <div class="card">
+                        <div class="items-2">
+                            <h3>cuentos</h3>
+                            <img class="img__card" src="../asset/img/cuento.svg" alt="">
+                        </div>
+
+                        <div class="items-2">
+                            <h3>musica</h3>
+                            <img class="img__card" src="../asset/img/auriculares.svg" alt="">
+                        </div>
+
+                        <div class="items-2">
+                            <h3>juegos</h3>
+                            <img class="img__card" src="../asset/img/juegos.svg" alt="">
+                        </div>
+                        <div class="items-2">
+                            <h3>idiomas</h3>
+                            <img class="img__card" src="../asset/img/traducir.svg" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="statistics">
+                        <div class="container__card">
+                            <div class="card__statistics">
+                                <img class="barra" src="../asset/img/barra.svg" alt="">
+                                <h4 class="progreso">PROGRESO</h4>
+                                <h2 class="cincuenta">50%</h2>
+                            </div>
+                            <div class="card__statistics">
+
+                                <img class="tikastar" src="../asset/img/tikastar.svg" alt="">
+                                <h4 class="progreso">TIKASTARS</h4>
+                                <h2 class="cincuenta">2.500</h2>
+
+                            </div>
+                        </div>
+
+                        <div class="Insignias">
+                            <div class="container_text_insignias">
+                                <img class="insignia__2" src="../asset/img/certificado.svg" alt="">
+                                <h2 class="text__insignias">INSIGNIAS</h2>
+                            </div>
+
+                            <div class="container__insignias">
+                                <div class="img__text__insignias">
+                                    <div class="container__libro">
+                                        <img class="libro" src="../asset/img/libro.svg" alt="">
+                                        <div class="text__libro">
+                                            <h6>Lector experto</h6>
+                                            <p>Descubre historias asombrosas</p>
+                                        </div>
+                                    </div>
+                                    <img src="../asset/img/close.svg" alt="">
+                                </div>
+
+                                <div class="img__text__insignias">
+                                    <div class="container__libro">
+                                        <img class="libro" src="../asset/img/certificado_icon.svg" alt="">
+                                        <div class="text__libro">
+                                            <h6>Lector experto</h6>
+                                            <p>Descubre historias asombrosas</p>
+                                        </div>
+                                    </div>
+                                    <img src="../asset/img/close.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="container__video">
+                        <button class="volver">
+
+                            <img src="../asset/img/volver.svg" alt="">
+                            Volver al menu
+
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- / Layout page -->
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+    <footer>
+        <div class="container__footer">
+            <div class="items__footer">
+                <img src="../asset/img/casa.svg" alt="">
+                <a href="">Home</a>
+            </div>
+            <div class="items__footer">
+                <img src="../asset/img/tienda.svg" alt="">
+                <a href="">Tikashop</a>
+            </div>
+            <div class="items__footer">
+                <img src="../asset/img/desafios.svg" alt="">
+                <a href="">Desafios</a>
+            </div>
+            <div class="items__footer">
+                <img src="../asset/img/mas.svg" alt="">
+                <a href="">Mas</a>
+            </div>
+        </div>
+        <div></div>
+    </footer>
+
+</body>
+
+</html>
