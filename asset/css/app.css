@@ -302,6 +302,10 @@ section {
     display: flex;
 }
 
+.hero > :nth-child(2) {
+    margin-top: -100px;
+}
+
 .card-container > .card {
     margin: 5px;
     width: 300px;
