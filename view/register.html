@@ -20,225 +20,251 @@
             <div class="logo">
                 <img src="../asset/img/TikamusVol1 solo.svg" alt="">
             </div>
-            <div class="icon me-2 mt-2">
-                <i class="bi bi-globe mt-4"></i>
-            </div>
         </header>
         <main>
             <section class="hero">
                 <div class="img-register"></div>
-                <div class="c">
-                    <form method="POST" action="{{ route('register') }}" class="form-register">
-                        
-                        <div class="form-register__header">
-        
+                    <div class="container mb-5 bg-white shadow-lg rounded-5 p-3">
+                      
+                        <div class="container text-center">
+                            <h2 class="h2 text-center" style="font-size: 1.1rem;">
+                                <span class="neg">Hola Cristian
+                                    <br>¡Queremos Conocerte!
+                                </span>   
+                            
+                            </h2>
+                            
+                                <small>Completa el formulario y recibe tus
+                                    <br>Primeras
+                                    <b>100 TikaStars (TS)</b>
+                                </small>
+                         
                         </div>
-                        <div class="form-register__body">
-                            <div class="step active" id="step-1">
-                                <div class="step__header">
-                                    <h2 class="step__title"> <span class="neg">Hola Cristian <br>¡Queremos Conocerte</span><br>
-                                        <small>Completa el formulario y recibe tus <br>Primeras <b>100 TikaStars (TS)</b></small>
-                                    </h2>
-                                </div>
-                                <div class="step__body ">
-                                    <div class="container mb-3">
-                                        <input class="form-control" id="namefff" type="text" value=""
-                                            placeholder="Nombre" name="name" required>
+
+
+                        <form method="POST" action="" class="p-3" id="form-register">
+                            <div class="form-register__body">
+                                <div class="step active" id="step-1">
+    
+                                    <div class="step__body ">
+                                        <div class="container mb-3">
+                                            <input
+                                                class="form-control"
+                                                id="namefff"
+                                                type="text"
+                                                value=""
+                                                placeholder="Nombre"
+                                                name="name"
+                                                required
+                                            >
+                                        </div>
+                                        <div class="container mb-3">
+                                            <input
+                                                class="form-control"
+                                                id="email"
+                                                type="text"
+                                                placeholder="E-mail"
+                                                name="email"
+                                                required
+                                            >
+                                        </div>
+                                        <div class="container mb-3">
+                                            <input
+                                                class="form-control"
+                                                id="password"
+                                                type="password"
+                                                placeholder="Contraseña"
+                                                name="password"
+                                                required
+                                            >
+                                        </div>
+                                        <div class="container mb-3">
+                                            <input
+                                                class="form-control"
+                                                id="password-confirm"
+                                                type="password"
+                                                placeholder="Confirmar contraseña"
+                                                name="password_confirmation"
+                                                required
+                                                autocomplete="new-password"
+                                            >
+                                        </div>
+                                        <div class="container mb-3">
+                                            <select class="form-select" name="objetive" id="objetive">
+                                                <option selected disabled value="ggggg">Meta</option>
+                                                <option value="objetive">Mejorar el habla</option>
+                                                <option value="objetive">Mejorar la lectura</option>
+                                                <option value="objetive">Potenciar el canto</option>
+                                                <option value="objetive">Aprender música</option>
+                                                <option value="objetive">Terapia</option>
+                                                <option value="objetive">Aliviar el estrés</option>
+                                                <option value="objetive">Desarrollo personal</option>
+                                                <option value="objetive">Diversión</option>
+                                                <option value="objetive">Aprender otro idioma</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="container mb-3">
-                                        <input class="form-control" id="email" type="text" placeholder="E-mail"
-                                            name="email" required>
+                                    <div class="text-center">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary step__button--next"
+                                            data-to_step="2"
+                                            data-step="1"
+                                        >Siguiente</button>
                                     </div>
-        
-                                    <div class="container mb-3">
-                                        <input class="form-control" id="password" type="password" placeholder="Contraseña"
-                                            name="password" required>
-                                    </div>
-                                    <div class="container mb-3">
-        
-                                        <input class="form-control" id="password-confirm" type="password"
-                                            placeholder="Confirmar contraseña" name="password_confirmation" required
-                                            autocomplete="new-password">
-                                    </div>
-        
-                                    <div class="container mb-3">
-                                        <select class="form-select" name="objetive" id="objetive">
-                                            <option selected disabled value="ggggg">Meta</option>
-                                            <option value="objetive">Mejorar el habla</option>
-                                            <option value="objetive">Mejorar la lectura</option>
-                                            <option value="objetive">Potenciar el canto</option>
-                                            <option value="objetive">Aprender música</option>
-                                            <option value="objetive">Terapia</option>
-                                            <option value="objetive">Aliviar el estrés</option>
-                                            <option value="objetive">Desarrollo personal</option>
-                                            <option value="objetive">Diversión</option>
-                                            <option value="objetive">Aprender otro idioma</option>
-                                        </select>
-                                    </div>
-        
-        
-        
-        
-        
-                                </div>
-        
-                                <div class="step__footer">
-                                    <button type="button" class="btn btn-primary step__button--next" data-to_step="2"
-                                        data-step="1">Siguiente</button> <br>
-                                    <div class="container mb3  ">
+
+                                
+                                    <div class="container">
                                         <ul class="progressbar w-auto p-3" style="list-style: none;">
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
-                                            <li class="progressbar__option"style="list-style: none;"></li>
-                                            <li class="progressbar__option"style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
+                                            <li class="progressbar__option" style="list-style: none;"></li>
+                                            <li class="progressbar__option" style="list-style: none;"></li>
                                         </ul>
                                     </div>
-        
+
+
+
                                 </div>
-        
-        
-        
-        
-                            </div>
-                            <div class="step d-none " id="step-2">
-                                <div class="step__header">
-                                    <h2 class="step__title">Hola Cristian <br>Queremos Conocerte
-                                        <small>Completa el formulario y recibe tus <br>Primeras <b>100 TikaStars (TS)</b></small>
-                                    </h2>
-                                </div>
-                                <div class="step__body">
-                                    <div class="container mb-3">
-                                        <select class="form-select" name="objetive" id="objetive">
-                                            <option selected disabled value="ggggg">Edad</option>
-                                            <option value="Menos de 20 años">Menos de 20 años</option>
-                                            <option value="20-29 años">20-29 años</option>
-                                            <option value="30-39 años">30-39 años</option>
-                                            <option value="40-49 años">40-49 años</option>
-                                            <option value="50-59 años">50-59 años</option>
-                                            <option value="60 años en adelante">60 años en adelante</option>
-        
-                                        </select>
-                                    </div>
-        
-                                    <div class="container mb-3">
-                                        <select class="form-select" name="level" id="level">
-                                            <option selected value="ggggg">Nivel</option>
-                                            <option value="No sé">No sé</option>
-                                            <option value="Principiante">Principiante</option>
-                                            <option value="Medio">Medio</option>
-                                            <option value="Avanzado">Avanzado</option>
-                                            <option value="Entusiasta">Entusiasta</option>
-                                        </select>
-                                    </div>
-        
-                                    <div class="container mb-3">
-                                        <select class="form-select" name="practicalduration" id="practicalduration">
-                                            <option selected value="ggggg">Duracion Diaria</option>
-                                            <option value="Menos de 10 minutos">Menos de 10 minutos</option>
-                                            <option value="10-20 minutos">10-20 minutos</option>
-                                            <option value="20-30 minutos">20-30 minutos</option>
-                                            <option value="Mas de 30 minutos">Mas de 30 minutos</option>
-                                        </select>
-                                    </div>
-                                    <script>
-                                        var tmp = 0;
-                                        function lerta() {
-        
-                                            if (tmp == 0) {
-                                                Swal.fire({
-                                                title: "Consentimiento",
-                                                text: "Ayuda a expertos en la educación, terapeutas,   Lingüistas y científicos de datos a mejorar las analíticas y sugerencias personalizadas.Solo para uso interno, no vendemos ni compartimos tus datos con terceros.",
-                                                icon: "info",
-        
-                                            });
-                                            tmp=1
-                                            } else {
-        
+                                <div class="step d-none" id="step-2">
+                                    <div class="step__body">
+                                        <div class="container mb-3">
+                                            <select class="form-select" name="objetive" id="objetive">
+                                                <option selected disabled value="ggggg">Edad</option>
+                                                <option value="Menos de 20 años">Menos de 20 años</option>
+                                                <option value="20-29 años">20-29 años</option>
+                                                <option value="30-39 años">30-39 años</option>
+                                                <option value="40-49 años">40-49 años</option>
+                                                <option value="50-59 años">50-59 años</option>
+                                                <option value="60 años en adelante">60 años en adelante</option>
+                                            </select>
+                                        </div>
+                                        <div class="container mb-3">
+                                            <select class="form-select" name="level" id="level">
+                                                <option selected value="ggggg">Nivel</option>
+                                                <option value="No sé">No sé</option>
+                                                <option value="Principiante">Principiante</option>
+                                                <option value="Medio">Medio</option>
+                                                <option value="Avanzado">Avanzado</option>
+                                                <option value="Entusiasta">Entusiasta</option>
+                                            </select>
+                                        </div>
+                                        <div class="container mb-3">
+                                            <select class="form-select" name="practicalduration" id="practicalduration">
+                                                <option selected value="ggggg">Duracion Diaria</option>
+                                                <option value="Menos de 10 minutos">Menos de 10 minutos</option>
+                                                <option value="10-20 minutos">10-20 minutos</option>
+                                                <option value="20-30 minutos">20-30 minutos</option>
+                                                <option value="Mas de 30 minutos">Mas de 30 minutos</option>
+                                            </select>
+                                        </div>
+                                        <script>
+                                            var tmp = 0;
+                                            function lerta() {
+    
+                                                if (tmp == 0) {
+                                                    Swal.fire({
+                                                    title: "Consentimiento",
+                                                    text: "Ayuda a expertos en la educación, terapeutas,   Lingüistas y científicos de datos a mejorar las analíticas y sugerencias personalizadas.Solo para uso interno, no vendemos ni compartimos tus datos con terceros.",
+                                                    icon: "info",
+    
+                                                });
+                                                tmp=1
+                                                } else {
+    
+                                                }
+    
                                             }
-        
-                                        }
-                                    </script>
-                                    <div class="container mb-3">
-                                        <select onclick="lerta()" class="form-select" name="researchconsent"
-                                            id="researchconsent">
-                                            <option selected value="ggggg">Consentimiendo de Investigacion</option>
-                                            <option value="Quiero ayudar">Quiero ayudar</option>
-                                            <option value="Mantén mis datos en privado">Mantén mis datos en privado</option>
-                                        </select>
+                                        </script>
+                                        <div class="container mb-3">
+                                            <select
+                                                onclick="lerta()"
+                                                class="form-select"
+                                                name="researchconsent"
+                                                id="researchconsent"
+                                            >
+                                                <option selected value="ggggg">Consentimiendo de Investigacion</option>
+                                                <option value="Quiero ayudar">Quiero ayudar</option>
+                                                <option value="Mantén mis datos en privado">Mantén mis datos en privado</option>
+                                            </select>
+                                        </div>
                                     </div>
-        
-        
-                                </div>
-                                <div class="step__footer">
-                                    <button type="button" class="btn btn-primary step__button--back" data-to_step="1"
-                                        data-step="2">Regresar</button>
-                                    <button type="button" class="btn btn-primary step__button--next" data-to_step="3"
-                                        data-step="2">Siguiente</button> <br>
-                                    <div class="container mb3">
+                                    <div class="text-center">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary step__button--back"
+                                            data-to_step="1"
+                                            data-step="2"
+                                        >Regresar</button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary step__button--next"
+                                            data-to_step="3"
+                                            data-step="2"
+                                        >Siguiente</button>
+                                        <br>
+                                    
+                                    </div>
+
+                                    <div class="">
                                         <ul class="progressbar w-auto p-3" style="list-style: none;">
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
-                                            <li class="progressbar__option"style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
+                                            <li class="progressbar__option" style="list-style: none;"></li>
                                         </ul>
                                     </div>
-        
+
+
                                 </div>
-        
-                            </div>
-                            <div class="step d-none" id="step-3">
-                                <div class="step__header">
-                                    <h2 class="step__title">Hola Cristian <br>Queremos Conocerte
-                                        <small>Completa el formulario y recibe tus <br>Primeras <b>100 TikaStars (TS)</b></small>
-                                    </h2>
-                                </div>
-                                <div class="step__body">
-                                    <div class="container mb-3">
-                                        <select class="step__input" name="" id="">
-                                            <option selected value="ggggg">Notificacion Push Y por Correo</option>
-                                            <option  value="Inspiración diaria"></option>
-                                            <option value="correo electronico">correo electronico</option>
-                                        </select>
+                                <div class="step d-none" id="step-3">
+                                    <div class="step__body">
+                                        <div class="container mb-3">
+                                            <select class="form-control" name="" id="">
+                                                <option selected value="ggggg">Notificacion Push Y por Correo</option>
+                                                <option value="Inspiración diaria"></option>
+                                                <option value="correo electronico">correo electronico</option>
+                                            </select>
+                                        </div>
+                                        <div class="container mb-3">
+                                            <select class="form-control" name="" id="">
+                                                <option disabled selected value="">Idioma:</option>
+                                                <option value="Español">Español</option>
+                                                <option value="English">English</option>
+                                                <option value="Deutsch">Deutsch</option>
+                                            </select>
+                                        </div>
+                                        <div class="container mb-3">
+                                            <input
+                                                id="termsConditions"
+                                                type="text"
+                                                name="termsConditions"
+                                                placeholder="Terminos Y privacidad"
+                                                class="form-control"
+                                            >
+                                        </div>
                                     </div>
-                                    <div class="container mb-3">
-                                        <select class="step__input" name="" id="">
-                                            <option disabled selected value="">Idioma:</option>
-                                            <option value="Español">Español</option>
-                                            <option value="English">English</option>
-                                            <option value="Deutsch">Deutsch</option>
-                                        </select>
+                                    <div class="text-center">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary step__button--back"
+                                            data-to_step="2"
+                                            data-step="3"
+                                        >Regresar</button>
+                                        <button type="submit" class="btn btn-success">Registrarse</button>
+                                        <br>
+                                      
                                     </div>
-                                    <div class="container mb-3">
-                                        <input id="termsConditions" type="text" name="termsConditions"
-                                            placeholder="Terminos Y privacidad" class="form-control">
-                                    </div>
-        
-        
-        
-                                </div>
-                                <div class="step__footer">
-                                    <button type="button" class="btn btn-primary step__button--back" data-to_step="2"
-                                        data-step="3">Regresar</button>
-                                    <button type="submit" class="btn btn-success">Registrarse</button> <br>
-                                    <div class=" mb4">
+
+                                    <div class="">
                                         <ul class="progressbar w-auto p-3">
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
-                                            <li class="progressbar__option active"style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
+                                            <li class="progressbar__option active" style="list-style: none;"></li>
                                         </ul>
                                     </div>
-        
                                 </div>
-        
-        
                             </div>
-                        </div>
-                        
-        
-        
-                    </form>
-                </div>
-                <div class="img-about container d-none">
-                    <img src="{{ asset('asset/img/about-img.png') }}" alt class width="140%">
-                </div>
+                        </form>
+                    </div>
             </section>
         </main>
         <footer class="footer">

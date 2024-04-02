@@ -92,6 +92,7 @@ section {
     width: 100%;
     top: 0;
     z-index: 9999;
+    padding: 5px;
 }
 
 .logo {
@@ -355,71 +356,20 @@ section {
 }
 
 .footer {
-    margin-top: auto; /* 0px;ja el footer hacia abajo, ocupando el espacio restante */
+    margin-top: auto; 
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #f8f9fa; /* Añade un color de fondo opcional */
-}
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background-color: #dbd8d8; 
+    padding: 10px;
 }
 
-:root {
-    --color-bg-1: #008080;
-    --color-bg-2: #fef9e7;
-    --color-btn: #2196f3;
-    --color-header-step: rgb(0, 255, 17);
-    --color-shadow: #222;
-    --color-border-input: #ddd;
-}
-/* Contenedor principal */
-.c{
-    display: flex;
-    justify-content: center;
-    margin-top: -130px;
-}
-.root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 16px;
 
-    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
-    overflow: hidden;
-    font-family: "Nunito";
-}
-.cl {
-    /* background-color:aqua !important ; */
-    display: flex;
-    width: 15rem;
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 700px;
-}
-.form-register {
-    padding: 20px 15px;
-    width: 100%;
-    max-width: 400px;
-
-}
-
-/* Header del formulario */
-
-/* Progressbar */
 .progressbar {
-
     display: flex;
     list-style: none;
     margin-bottom: 15px;
     counter-reset: step;
-
-
 }
 
 .progressbar__option {
@@ -431,7 +381,6 @@ section {
 }
 
 .progressbar__option:before {
-
     display: flex;
     content: "";
     counter-increment: step;
@@ -465,31 +414,15 @@ section {
 
 .progressbar__option.active:before,
 .progressbar__option.active:after {
-    background-color: var(--color-header-step);
+    background-color: #189A40;
+    border-radius: 50px;
+    margin-left: -80px;
 }
 
-/* Título del formulario */
-.form-register__title {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 15px;
-}
 
-/* body del formulario */
-.form-register__body {
-    display: flex;
-    align-items: flex-start;
-}
-
-/* step */
 .step {
-    background-color: white;
-    box-shadow: 5px 5px 5px 2px var(--color-shadow);
-    border-radius: 30px;
-    min-width: 100%;
     opacity: 0;
     transition: all 0.2s linear;
-
 }
 
 .step.active {
@@ -516,55 +449,6 @@ section {
     }
 }
 
-/* header de step */
-.step__header {
-    padding: 20px 15px;
-    /* background-color: var(--color-header-step); */
-    background-color: rgb(255, 255, 255);
-
-    border-radius: 30px 30px 0px 0px;
-}
-
-.step__title {
-    font-size: 1.1rem;
-    text-align: center;
-
-}
-.step__title .neg {
-    font-weight: 900;
-}
-
-/* body de step */
-.step__body {
-    padding: 20px 15px 0;
-}
-
-/* step inputs */
-.step__input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    border: 1px solid var(--color-border-input);
-}
-
-/* step footer */
-.step__footer {
-    padding: 20px 15px;
-    text-align: center;
-}
-
-/* step botones */
-.step__button {
-    display: inline-block;
-    padding: 10px;
-    background-color: var(--color-btn);
-    border: none;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-}
 @media (min-width: 800px) {
     .img-hero, .img-register {
         margin-top: 40px;
