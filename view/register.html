@@ -27,7 +27,7 @@
                     <div class="container">
                         <div class="container mb-5 bg-white shadow-lg rounded-5 p-2">
                       
-                            <div class="container text-center">
+                            <div class="container text-center p-3">
                                 <h2 class="h2 text-center" style="font-size: 1.1rem;">
                                     <span class="neg">Hola Cristian
                                         <br>¡Queremos Conocerte!
@@ -50,7 +50,7 @@
                                         <div class="step__body ">
                                             <div class="container mb-3">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control rounded-4 shadow-sm "
                                                     id="namefff"
                                                     type="text"
                                                     value=""
@@ -61,7 +61,7 @@
                                             </div>
                                             <div class="container mb-3">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control  rounded-4 shadow-sm"
                                                     id="email"
                                                     type="text"
                                                     placeholder="E-mail"
@@ -71,7 +71,7 @@
                                             </div>
                                             <div class="container mb-3">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control  rounded-4 shadow-sm"
                                                     id="password"
                                                     type="password"
                                                     placeholder="Contraseña"
@@ -81,7 +81,7 @@
                                             </div>
                                             <div class="container mb-3">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control  rounded-4 shadow-sm"
                                                     id="password-confirm"
                                                     type="password"
                                                     placeholder="Confirmar contraseña"
@@ -91,7 +91,7 @@
                                                 >
                                             </div>
                                             <div class="container mb-3">
-                                                <select class="form-select" name="objetive" id="objetive">
+                                                <select class="form-select  rounded-4 shadow-sm" name="objetive" id="objetive">
                                                     <option selected disabled value="ggggg">Meta</option>
                                                     <option value="objetive">Mejorar el habla</option>
                                                     <option value="objetive">Mejorar la lectura</option>
@@ -108,7 +108,8 @@
                                         <div class="text-center">
                                             <button
                                                 type="button"
-                                                class="btn btn-primary step__button--next"
+                                                class="btn  step__button--next  rounded-4 shadow-sm fw-semibold p-md-2 "
+                                                style="background-color:#33A1D2; color: white; width: 8rem;"
                                                 data-to_step="2"
                                                 data-step="1"
                                             >Siguiente</button>
@@ -129,7 +130,7 @@
                                     <div class="step d-none" id="step-2">
                                         <div class="step__body">
                                             <div class="container mb-3">
-                                                <select class="form-select" name="objetive" id="objetive">
+                                                <select class="form-select rounded-4 shadow-sm" name="objetive" id="objetive">
                                                     <option selected disabled value="ggggg">Edad</option>
                                                     <option value="Menos de 20 años">Menos de 20 años</option>
                                                     <option value="20-29 años">20-29 años</option>
@@ -140,7 +141,7 @@
                                                 </select>
                                             </div>
                                             <div class="container mb-3">
-                                                <select class="form-select" name="level" id="level">
+                                                <select class="form-select rounded-4 shadow-sm" name="level" id="level">
                                                     <option selected value="ggggg">Nivel</option>
                                                     <option value="No sé">No sé</option>
                                                     <option value="Principiante">Principiante</option>
@@ -150,7 +151,7 @@
                                                 </select>
                                             </div>
                                             <div class="container mb-3">
-                                                <select class="form-select" name="practicalduration" id="practicalduration">
+                                                <select class="form-select rounded-4 shadow-sm" name="practicalduration" id="practicalduration">
                                                     <option selected value="ggggg">Duracion Diaria</option>
                                                     <option value="Menos de 10 minutos">Menos de 10 minutos</option>
                                                     <option value="10-20 minutos">10-20 minutos</option>
@@ -179,7 +180,7 @@
                                             <div class="container mb-3">
                                                 <select
                                                     onclick="lerta()"
-                                                    class="form-select"
+                                                    class="form-select rounded-4 shadow-sm"
                                                     name="researchconsent"
                                                     id="researchconsent"
                                                 >
@@ -192,14 +193,16 @@
                                         <div class="text-center">
                                             <button
                                                 type="button"
-                                                class="btn btn-primary step__button--back"
+                                                class="btn btn-primary step__button--back rounded-4 shadow-sm"
                                                 data-to_step="1"
+                                                 style="background-color:#33A1D2; color: white; width: 8rem;"
                                                 data-step="2"
                                             >Regresar</button>
                                             <button
                                                 type="button"
-                                                class="btn btn-primary step__button--next"
+                                                class="btn btn-primary step__button--next rounded-4 shadow-sm"
                                                 data-to_step="3"
+                                                 style="background-color:#33A1D2; color: white; width: 8rem;"
                                                 data-step="2"
                                             >Siguiente</button>
                                             <br>
@@ -219,14 +222,14 @@
                                     <div class="step d-none" id="step-3">
                                         <div class="step__body">
                                             <div class="container mb-3">
-                                                <select class="form-control" name="" id="">
+                                                <select class="form-control rounded-4 shadow-sm" name="" id="">
                                                     <option selected value="ggggg">Notificacion Push Y por Correo</option>
                                                     <option value="Inspiración diaria"></option>
                                                     <option value="correo electronico">correo electronico</option>
                                                 </select>
                                             </div>
                                             <div class="container mb-3">
-                                                <select class="form-control" name="" id="">
+                                                <select class="form-control rounded-4 shadow-sm" name="" id="">
                                                     <option disabled selected value="">Idioma:</option>
                                                     <option value="Español">Español</option>
                                                     <option value="English">English</option>
@@ -239,18 +242,20 @@
                                                     type="text"
                                                     name="termsConditions"
                                                     placeholder="Terminos Y privacidad"
-                                                    class="form-control"
+                                                    class="form-control rounded-4 shadow-sm"
                                                 >
                                             </div>
                                         </div>
                                         <div class="text-center">
                                             <button
                                                 type="button"
-                                                class="btn btn-primary step__button--back"
+                                                class="btn btn-primary step__button--back rounded-4 shadow-sm"
                                                 data-to_step="2"
+                                                 style="background-color:#33A1D2; color: white; width: 8rem;"
                                                 data-step="3"
                                             >Regresar</button>
-                                            <button type="submit" class="btn btn-success">Registrarse</button>
+                                            <button type="submit" class="btn btn-success  rounded-4 shadow-sm"
+                                             style="background-color:#33A1D2; color: white; width: 8rem;">Registrarse</button>
                                             <br>
                                           
                                         </div>
