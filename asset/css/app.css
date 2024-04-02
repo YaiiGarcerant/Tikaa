@@ -2,23 +2,6 @@
     box-sizing: border-box;
     font-family: "Nunito";
 }
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --color-bg-1: #008080;
-    --color-bg-2: #fef9e7;
-    --color-btn: #2196f3;
-    --color-header-step: rgb(0, 255, 17);
-    /* --color-shadow: #222; */
-    --color-border-input: #ddd;
-}
-
 body {
     margin: 0px;
     scroll-behavior: smooth;
@@ -28,6 +11,10 @@ body {
     background-color: #fdfdfd;
 
 }
+
+/* main {
+    flex: 1;
+} */
 
 #preloader {
     position: fixed;
@@ -92,7 +79,6 @@ section {
     width: 100%;
     top: 0;
     z-index: 9999;
-    padding: 5px;
 }
 
 .logo {
@@ -122,12 +108,13 @@ section {
 }
 .img-register {
     width: 100%;
-    height: 55vh;
+    height: 30vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
         url("../img/slide3.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    margin-top: 56px;
 }
 
 @keyframes slideIn {
@@ -286,6 +273,15 @@ section {
     background-position: center center;
 }
 
+/* .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+    left: calc(50% - 60px);
+} */
 
 .section-title h2::after {
     content: "";
@@ -300,10 +296,6 @@ section {
 
 .card-container {
     display: flex;
-}
-
-.hero > :nth-child(2) {
-    margin-top: -100px;
 }
 
 .card-container > .card {
@@ -360,20 +352,71 @@ section {
 }
 
 .footer {
-    margin-top: auto; 
+    margin-top: auto; /* 0px;ja el footer hacia abajo, ocupando el espacio restante */
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #dbd8d8; 
-    padding: 10px;
+    background-color: #f8f9fa; /* Añade un color de fondo opcional */
+}
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+:root {
+    --color-bg-1: #008080;
+    --color-bg-2: #fef9e7;
+    --color-btn: #2196f3;
+    --color-header-step: rgb(0, 255, 17);
+    --color-shadow: #222;
+    --color-border-input: #ddd;
+}
+/* Contenedor principal */
+.c{
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+}
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
 
+    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
+    overflow: hidden;
+    font-family: "Nunito";
+}
+.cl {
+    /* background-color:aqua !important ; */
+    display: flex;
+    width: 15rem;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 700px;
+}
+.form-register {
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+/* Header del formulario */
+
+/* Progressbar */
 .progressbar {
+
     display: flex;
     list-style: none;
     margin-bottom: 15px;
     counter-reset: step;
+
+
 }
 
 .progressbar__option {
@@ -385,6 +428,7 @@ section {
 }
 
 .progressbar__option:before {
+
     display: flex;
     content: "";
     counter-increment: step;
@@ -418,15 +462,31 @@ section {
 
 .progressbar__option.active:before,
 .progressbar__option.active:after {
-    background-color: #189A40;
-    border-radius: 50px;
-    margin-left: -80px;
+    background-color: var(--color-header-step);
 }
 
+/* Título del formulario */
+.form-register__title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
+/* body del formulario */
+.form-register__body {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* step */
 .step {
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px var(--color-shadow);
+    border-radius: 30px;
+    min-width: 100%;
     opacity: 0;
     transition: all 0.2s linear;
+
 }
 
 .step.active {
@@ -453,15 +513,60 @@ section {
     }
 }
 
-@media (min-width: 800px) {
-    .img-hero, .img-register {
-        margin-top: 40px;
-        height: 65vh;
-    }
+/* header de step */
+.step__header {
+    padding: 20px 15px;
+    /* background-color: var(--color-header-step); */
+    background-color: rgb(255, 255, 255);
 
-    .hero > :nth-child(2) {
-        margin-top: -100px;
-        width: 480px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.step__title {
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+.step__title .neg {
+    font-weight: 900;
+}
+
+/* body de step */
+.step__body {
+    padding: 20px 15px 0;
+}
+
+/* step inputs */
+.step__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-input);
+}
+
+/* step footer */
+.step__footer {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+/* step botones */
+.step__button {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--color-btn);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .img-hero {
+        margin-top: 60px;
+        height: 35vh;
     }
 
     .mood-offline{

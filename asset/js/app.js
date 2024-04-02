@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
     }, 3000);
 });
 //
-let form = document.querySelector('#form-register');
+let form = document.querySelector('.form-register');
 let progressOptions = document.querySelectorAll('.progressbar__option');
 
 form.addEventListener('click', function(e) {
