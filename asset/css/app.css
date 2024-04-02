@@ -361,7 +361,28 @@ section {
     width: 100%;
     background-color: #f8f9fa; /* Añade un color de fondo opcional */
 }
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --color-bg-1: #008080;
+    --color-bg-2: #fef9e7;
+    --color-btn: #2196f3;
+    --color-header-step: rgb(0, 255, 17);
+    --color-shadow: #222;
+    --color-border-input: #ddd;
+}
+/* Contenedor principal */
+.c{
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+}
 .root {
     display: flex;
     justify-content: center;
@@ -381,13 +402,6 @@ section {
     margin-top: 300px;
     margin-left: 700px;
 }
-
-.hero > :nth-child(2) {
-    margin-top: -80px;
-}
-
-
-
 .form-register {
     padding: 20px 15px;
     width: 100%;
@@ -551,7 +565,6 @@ section {
     border-radius: 3px;
     cursor: pointer;
 }
-
 @media (min-width: 800px) {
     .img-hero, .img-register {
         margin-top: 40px;

@@ -27,12 +27,14 @@
         <main>
             <section class="hero">
                 <div class="img-register"></div>
-                <div class="container mb-5">
+                <div class="c">
+                    <form method="POST" action="{{ route('register') }}" class="form-register">
+                        
                         <div class="form-register__header">
         
                         </div>
                         <div class="form-register__body">
-                            <div class="step active bg-white shadow-lg rounded-5" id="step-1">
+                            <div class="step active" id="step-1">
                                 <div class="step__header">
                                     <h2 class="step__title"> <span class="neg">Hola Cristian <br>¡Queremos Conocerte</span><br>
                                         <small>Completa el formulario y recibe tus <br>Primeras <b>100 TikaStars (TS)</b></small>
@@ -229,6 +231,13 @@
         
                             </div>
                         </div>
+                        
+        
+        
+                    </form>
+                </div>
+                <div class="img-about container d-none">
+                    <img src="{{ asset('asset/img/about-img.png') }}" alt class width="140%">
                 </div>
             </section>
         </main>
