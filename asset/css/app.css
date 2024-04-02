@@ -2,6 +2,23 @@
     box-sizing: border-box;
     font-family: "Nunito";
 }
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-1: #008080;
+    --color-bg-2: #fef9e7;
+    --color-btn: #2196f3;
+    --color-header-step: rgb(0, 255, 17);
+    /* --color-shadow: #222; */
+    --color-border-input: #ddd;
+}
+
 body {
     margin: 0px;
     scroll-behavior: smooth;
@@ -11,10 +28,6 @@ body {
     background-color: #fdfdfd;
 
 }
-
-/* main {
-    flex: 1;
-} */
 
 #preloader {
     position: fixed;
@@ -108,13 +121,12 @@ section {
 }
 .img-register {
     width: 100%;
-    height: 30vh;
+    height: 55vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
         url("../img/slide3.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin-top: 56px;
 }
 
 @keyframes slideIn {
@@ -273,15 +285,6 @@ section {
     background-position: center center;
 }
 
-/* .section-title h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 1px;
-    background: #ddd;
-    left: calc(50% - 60px);
-} */
 
 .section-title h2::after {
     content: "";
@@ -358,28 +361,7 @@ section {
     width: 100%;
     background-color: #f8f9fa; /* Añade un color de fondo opcional */
 }
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --color-bg-1: #008080;
-    --color-bg-2: #fef9e7;
-    --color-btn: #2196f3;
-    --color-header-step: rgb(0, 255, 17);
-    --color-shadow: #222;
-    --color-border-input: #ddd;
-}
-/* Contenedor principal */
-.c{
-    display: flex;
-    justify-content: center;
-    margin-top: -130px;
-}
 .root {
     display: flex;
     justify-content: center;
@@ -399,6 +381,13 @@ section {
     margin-top: 300px;
     margin-left: 700px;
 }
+
+.hero > :nth-child(2) {
+    margin-top: -80px;
+}
+
+
+
 .form-register {
     padding: 20px 15px;
     width: 100%;
@@ -564,9 +553,14 @@ section {
 }
 
 @media (min-width: 800px) {
-    .img-hero {
-        margin-top: 60px;
-        height: 35vh;
+    .img-hero, .img-register {
+        margin-top: 40px;
+        height: 65vh;
+    }
+
+    .hero > :nth-child(2) {
+        margin-top: -100px;
+        width: 480px;
     }
 
     .mood-offline{
