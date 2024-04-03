@@ -27,28 +27,28 @@
         <main>
             <section class="mb-4">
                 <div class="img-hero"></div>
-                <div class="container mt-5">
+                <div class="container">
                     <div class="section-card">
                         <div class="row justify-content-center">
                             <div class="col-lg-5 col-md-6 mb-5">
-                                <div class="card rounded-4">
+                                <div class="card rounded-5 card-main">
                                     <div class="card-body text-center">
-                                        <p class="card-title fw-semibold mb-2 text-secondary fs-3">¡Bienvenido!</p>
-                                        <p class="mb-3 text-body-secondary fs-5">Descubre historias asombrosas</p>
+                                        <p class="card-title fw-semibold mb-1 text-secondary fs-2">¡Bienvenido!</p>
+                                        <p class="mb-3 fw-semibold mb-1 text-secondary fs-4">Descubre historias asombrosas</p>
                                         <div class="container">
                                             <input
                                                 type="text"
-                                                class="form-control border-2 shadow-sm mb-4 rounded-pill"
+                                                class="form-control border-2 shadow-sm mb-3 rounded-pill"
                                                 placeholder="Ingresa Tu nombre"
                                                 id="nom"
                                                 name="user_input"
                                             >
                                         </div>
-                                        <button type="submit" class="btn btn-outline-warning mb-4">
+                                        <button type="submit" class="btn btn-outline-warning">
                                             Ingresar
                                         </button>
-                                        <p class="text-center fw-semibold text-body-tertiary fs-6 mb-3">O Ingresa Con</p>
-                                        <div class="social-links mt-1 text-center">
+                                        <p class="text-center fw-semibold text-body-tertiary fs-6 mt-2">O Ingresa Con</p>
+                                        <div class="social-links text-center">
                                             <a href="https://www.apple.com/co/" class="apple">
                                                 <i class="bi bi-apple"></i>
                                             </a>
@@ -65,13 +65,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
-                                <div class="card rounded-4">
+                            <div class="col-lg-5 col-md-6 mt-5 mt-md-0 mb-4">
+                                <div class="card rounded-5 card-main">
                                     <div class="card-body">
                                         <p class="card-title fw-semibold mb-2 text-secondary fs-3 text-center">Iniciar Sesión</p>
                                         <div class="container">
                                             <div class="mb-3">
-                                                <label for="email" class="form-label">Email Address</label>
+                                                <label for="email" class="form-label">Correo Electronico</label>
                                                 <input
                                                     id="email"
                                                     type="email"
@@ -80,10 +80,11 @@
                                                     required
                                                     autocomplete="email"
                                                     autofocus
+                                                    placeholder="Ingrese su correo electronico"
                                                 >
                                             </div>
                                             <div class="mb-3">
-                                                <label for="password" class="form-label"></label>
+                                                <label for="password" class="form-label">Contraseña</label>
                                                 <input
                                                     id="password"
                                                     type="password"
@@ -91,11 +92,12 @@
                                                     name="password"
                                                     required
                                                     autocomplete="current-password"
+                                                    placeholder="Ingrese su contraseña"
                                                 >
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-warning">
+                                            <button type="submit" class="btn"  style="background-color:#33A1D2; color: white; width: 8rem;">
                                                 Iniciar Sesión
                                             </button>
                                         </div>
@@ -127,35 +129,56 @@
                 <div class="container line">
                     <div class="section-title">
                         <h2>
-                            <p id="nombre">Hola</p>
+                            <p class="card-title fw-semibold mb-2 text-secondary fs-3" id="nombre">Hola,</p>
                         </h2>
                     </div>
                     <div class="row content justify-content-center ">
-                        <p>¿Cómo quieres iniciar tu experiencia?</p>
+                        <p class="card-title fw-semibold mb-2 text-secondary fs-3">¿Cómo quieres iniciar tu experiencia?</p>
                         <div class="card-container">
                             <div class="card left">
-                                <i class="bi bi-search"></i>
+                                <div class="img">
+                                    <img src="../asset/img/buscar.svg" alt="">
+                                </div>
+                              
+                               
                             </div>
+                           
                             <div class="card right">
-                                <i class="bi bi-file-earmark-music"></i>
+                                <div class="img">
+                                    <img src="../asset/img/songs.svg" alt="">
+                                </div>
+                              
+                              
                             </div>
+                            
+                            
                         </div>
+
+                        <div class="container mt-2 row d-flex">
+                            <div class="col-6">
+                                <p class="fw-semibold mb-2 text-secondary text-center "> Leer un cuento</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fw-semibold mb-2 text-secondary "> Escuchar Musica</p>
+                            </div>
+                          
+                        </div>
+
                     </div>
-                    <div class="container button">
-                        <div class="d-grid gap-2 col-4 mx-auto">
+                    <div class="container button mt-3">
                             <a
-                                class="btn btn-outline-dark"
+                                class="btn shadow-sm fw-semibold rounded-4 text-secondary "
                                 type="button"
                                 id="omitir"
-                                href="{{ route('register') }}"
+                                href="register.html"
                             >Omitir</a>
-                        </div>
+
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="card-footer">
+        <footer class="footer mt-4">
+            <div class="card-footer fs-5 text-secondary">
                 www.tikamus.com
             </div>
         </footer>
