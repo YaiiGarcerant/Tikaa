@@ -333,7 +333,6 @@ section {
   position: absolute;
   top: 90%;
   left: 20%;
-  margin-top: px;
 }
 
 #omitir {
@@ -410,36 +409,35 @@ section {
 
 /* step */
 .step {
-    background-color: white;
-    border-radius: 30px;
-    min-width: 100%;
-    opacity: 0;
-    transition: all 0.2s linear;
-
+  background-color: white;
+  border-radius: 30px;
+  min-width: 100%;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 
 .step.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .step.to-left {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 
 .step.inactive {
-    animation-name: scale;
-    animation-duration: 0.2s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
+  animation-name: scale;
+  animation-duration: 0.2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
 
 @keyframes scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 @media (min-width: 800px) {
@@ -473,7 +471,18 @@ section {
 
   .card-container > .card {
     width: 200px;
-    height: 30vh;
+    height: 40vh;
+  }
+
+  .left > p {
+    text-align: end;
+    margin-right: 40px;
+
+  }
+
+  .right > p {
+    text-align: start;
+    margin-left: 40px;
   }
 
   #omitir {
