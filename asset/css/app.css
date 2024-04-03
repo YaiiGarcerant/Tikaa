@@ -12,9 +12,23 @@ body {
 
 }
 
-/* main {
-    flex: 1;
-} */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-1: #008080;
+    --color-bg-2: #fef9e7;
+    --color-btn: #2196f3;
+    --color-header-step: rgb(0, 255, 17);
+    --color-shadow: #222;
+    --color-border-input: #ddd;
+}
+
 
 #preloader {
     position: fixed;
@@ -359,55 +373,8 @@ section {
     width: 100%;
     background-color: #f8f9fa; /* Añade un color de fondo opcional */
 }
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --color-bg-1: #008080;
-    --color-bg-2: #fef9e7;
-    --color-btn: #2196f3;
-    --color-header-step: rgb(0, 255, 17);
-    --color-shadow: #222;
-    --color-border-input: #ddd;
-}
-/* Contenedor principal */
-.c{
-    display: flex;
-    justify-content: center;
-    margin-top: -130px;
-}
-.root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 16px;
 
-    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
-    overflow: hidden;
-    font-family: "Nunito";
-}
-.cl {
-    /* background-color:aqua !important ; */
-    display: flex;
-    width: 15rem;
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 700px;
-}
-.form-register {
-    padding: 20px 15px;
-    width: 100%;
-    max-width: 400px;
-
-}
-
-/* Header del formulario */
 
 /* Progressbar */
 .progressbar {
@@ -466,103 +433,36 @@ section {
     background-color: var(--color-header-step);
 }
 
-/* Título del formulario */
-.form-register__title {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* body del formulario */
-.form-register__body {
-    display: flex;
-    align-items: flex-start;
-}
-
-/* step */
 .step {
-    background-color: white;
-    box-shadow: 5px 5px 5px 2px var(--color-shadow);
     border-radius: 30px;
     min-width: 100%;
     opacity: 0;
-    transition: all 0.2s linear;
-
+    transform: translateX(100%);
+    transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .step.active {
     opacity: 1;
-}
+    transform: translateX(0%);
+    transition-delay: 0.5s; /* Retraso para que la transición comience después de 0.5 segundos */
 
-.step.to-left {
-    margin-left: -100%;
 }
 
 .step.inactive {
-    animation-name: scale;
-    animation-duration: 0.2s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
-@keyframes scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
+.slide-in-right {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
-/* header de step */
-.step__header {
-    padding: 20px 15px;
-    /* background-color: var(--color-header-step); */
-    background-color: rgb(255, 255, 255);
-
-    border-radius: 30px 30px 0px 0px;
+.slide-out-left {
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
-.step__title {
-    font-size: 1.1rem;
-    text-align: center;
-
-}
-.step__title .neg {
-    font-weight: 900;
-}
-
-/* body de step */
-.step__body {
-    padding: 20px 15px 0;
-}
-
-/* step inputs */
-.step__input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    border: 1px solid var(--color-border-input);
-}
-
-/* step footer */
-.step__footer {
-    padding: 20px 15px;
-    text-align: center;
-}
-
-/* step botones */
-.step__button {
-    display: inline-block;
-    padding: 10px;
-    background-color: var(--color-btn);
-    border: none;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-}
 
 @media (min-width: 800px) {
     .img-hero {
@@ -570,6 +470,9 @@ section {
         height: 35vh;
     }
 
+    .hero > :nth-child(2) {
+        margin-top: -120px;
+    }
     .mood-offline{
         display: none;
 

@@ -16,7 +16,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="logo">
+            <div class="logo mt-3">
                 <img src="../asset/img/TikamusVol1 solo.svg" alt="">
             </div>
         </header>
@@ -28,7 +28,7 @@
                       
                             <div class="container text-center p-3">
                                 <h2 class="h2 text-center" style="font-size: 1.1rem;">
-                                    <span class="neg">Hola Cristian
+                                    <span class="card-title fw-semibold mb-2 text-secondary fs-3">Hola Cristian
                                         <br>¡Queremos Conocerte!
                                     </span>   
                                 
@@ -40,12 +40,11 @@
                                     </small>
                              
                             </div>
-    
-    
+                            
                             <form method="POST" action="" class="p-3" id="form-register">
                                 <div class="form-register__body">
                                     <div class="step active" id="step-1">
-        
+                                               
                                         <div class="step__body ">
                                             <div class="container mb-3">
                                                 <input
@@ -113,8 +112,7 @@
                                                 data-step="1"
                                             >Siguiente</button>
                                         </div>
-    
-                                    
+
                                         <div class="container">
                                             <ul class="progressbar w-auto p-3" style="list-style: none;">
                                                 <li class="progressbar__option active" style="list-style: none;"></li>
@@ -122,9 +120,6 @@
                                                 <li class="progressbar__option" style="list-style: none;"></li>
                                             </ul>
                                         </div>
-    
-    
-    
                                     </div>
                                     <div class="step d-none" id="step-2">
                                         <div class="step__body">
@@ -215,57 +210,57 @@
                                                 <li class="progressbar__option" style="list-style: none;"></li>
                                             </ul>
                                         </div>
-    
-    
                                     </div>
                                     <div class="step d-none" id="step-3">
-                                        <div class="step__body">
-                                            <div class="container mb-3">
-                                                <select class="form-control rounded-4 shadow-sm" name="" id="">
-                                                    <option selected value="ggggg">Notificacion Push Y por Correo</option>
-                                                    <option value="Inspiración diaria"></option>
-                                                    <option value="correo electronico">correo electronico</option>
-                                                </select>
+                                        
+                                            <div class="step__body">
+                                                <div class="container mb-3">
+                                                    <select class="form-control rounded-4 shadow-sm" name="" id="">
+                                                        <option selected value="ggggg">Notificacion Push Y por Correo</option>
+                                                        <option value="Inspiración diaria"></option>
+                                                        <option value="correo electronico">correo electronico</option>
+                                                    </select>
+                                                </div>
+                                                <div class="container mb-3">
+                                                    <select class="form-control rounded-4 shadow-sm" name="" id="">
+                                                        <option disabled selected value="">Idioma:</option>
+                                                        <option value="Español">Español</option>
+                                                        <option value="English">English</option>
+                                                        <option value="Deutsch">Deutsch</option>
+                                                    </select>
+                                                </div>
+                                                <div class="container mb-3">
+                                                    <input
+                                                        id="termsConditions"
+                                                        type="text"
+                                                        name="termsConditions"
+                                                        placeholder="Terminos Y privacidad"
+                                                        class="form-control rounded-4 shadow-sm"
+                                                    >
+                                                </div>
                                             </div>
-                                            <div class="container mb-3">
-                                                <select class="form-control rounded-4 shadow-sm" name="" id="">
-                                                    <option disabled selected value="">Idioma:</option>
-                                                    <option value="Español">Español</option>
-                                                    <option value="English">English</option>
-                                                    <option value="Deutsch">Deutsch</option>
-                                                </select>
+                                            <div class="text-center">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-primary step__button--back rounded-4 shadow-sm"
+                                                    data-to_step="2"
+                                                     style="background-color:#33A1D2; color: white; width: 8rem;"
+                                                    data-step="3"
+                                                >Regresar</button>
+                                                <button type="submit" class="btn btn-success  rounded-4 shadow-sm"
+                                                 style="background-color:#33A1D2; color: white; width: 8rem;">Registrarse</button>
+                                                <br>
+                                              
                                             </div>
-                                            <div class="container mb-3">
-                                                <input
-                                                    id="termsConditions"
-                                                    type="text"
-                                                    name="termsConditions"
-                                                    placeholder="Terminos Y privacidad"
-                                                    class="form-control rounded-4 shadow-sm"
-                                                >
+        
+                                            <div class="">
+                                                <ul class="progressbar w-auto p-3">
+                                                    <li class="progressbar__option active" style="list-style: none;"></li>
+                                                    <li class="progressbar__option active" style="list-style: none;"></li>
+                                                    <li class="progressbar__option active" style="list-style: none;"></li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary step__button--back rounded-4 shadow-sm"
-                                                data-to_step="2"
-                                                 style="background-color:#33A1D2; color: white; width: 8rem;"
-                                                data-step="3"
-                                            >Regresar</button>
-                                            <button type="submit" class="btn btn-success  rounded-4 shadow-sm"
-                                             style="background-color:#33A1D2; color: white; width: 8rem;">Registrarse</button>
-                                            <br>
-                                          
-                                        </div>
-    
-                                        <div class="">
-                                            <ul class="progressbar w-auto p-3">
-                                                <li class="progressbar__option active" style="list-style: none;"></li>
-                                                <li class="progressbar__option active" style="list-style: none;"></li>
-                                                <li class="progressbar__option active" style="list-style: none;"></li>
-                                            </ul>
-                                        </div>
+                                
                                     </div>
                                 </div>
                             </form>
