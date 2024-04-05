@@ -286,6 +286,7 @@ section {
   margin: 5px;
   width: 300px;
   min-height: 35vh;
+  max-height: 40vh;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 25px;
@@ -406,13 +407,14 @@ section {
   background-color: var(--color-header-step);
 }
 
+
 /* step */
 .step {
   background-color: white;
   border-radius: 30px;
   min-width: 100%;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: opacity 0.2s linear, transform 0.9s;
 }
 
 .step.active {
@@ -420,25 +422,25 @@ section {
 }
 
 .step.to-left {
-  margin-left: -100%;
+  transform: translateX(-100%);
 }
 
 .step.inactive {
-  animation-name: scale;
-  animation-duration: 0.2s;
-  animation-direction: alternate;
-  animation-iteration-count: 2;
+  animation-name: fadeOutAndScale;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes scale {
-  from {
+@keyframes fadeOutAndScale {
+  0% {
+    opacity: 1;
     transform: scale(1);
   }
-  to {
+  100% {
+    opacity: 0;
     transform: scale(1.1);
   }
 }
-
 @media (min-width: 800px) {
   .hero > :nth-child(2) {
     margin-top: -80px;

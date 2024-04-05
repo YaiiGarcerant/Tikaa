@@ -16,6 +16,12 @@
 }
 
 
+a{
+    text-decoration: none !important;
+    color: #565656;
+    font-weight: 500;;
+}
+
 
 .layout-page{
     display: flex;

@@ -16,7 +16,6 @@
 }
 
 
-
 .layout-page{
     display: flex;
     flex-direction: column;
@@ -263,6 +262,7 @@ font-size: 1.5rem;
     width:40rem;
     color: white;
     margin-top: 1rem;
+    background-color: #ffff;
 }
 
 .container__card{
@@ -278,7 +278,8 @@ font-size: 1.5rem;
     width:18rem;
     padding:1rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: #E9EBF2 solid 3px;
   
 }
 
@@ -292,15 +293,16 @@ font-size: 1.5rem;
 
 .progreso{
     font-size: 1rem;
-    color: black;
-    font-weight: 600;
+    color: #565656;
+    font-weight: bold;
     margin-top: 1rem;
+    border-bottom: #E9EBF2 solid 1px;
 }
 
 
 .cincuenta{
     font-size: 3rem;
-    color: black;
+    color: #565656;
     font-weight: 700;
     
 }
@@ -317,6 +319,7 @@ font-size: 1.5rem;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 
 .insignia__2{
@@ -336,11 +339,15 @@ font-size: 1.5rem;
     color:black;
 }
 
+.text__insignias{
+    color: #565656;
+}
+ 
 .img__text__insignias{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+ 
     text-align: left;
     
 }
@@ -437,14 +444,19 @@ progress[value] {
     
   }
 
+  a{
+    text-decoration: none !important;
+    color: #565656;
+    font-weight: 500;;
+  }
 
   .items__footer{
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-  }
-
+}
+  
 @media screen and  (max-width:550px) {
 
   
