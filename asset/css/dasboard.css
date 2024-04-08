@@ -443,6 +443,10 @@ footer {
   background-color: white;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 .container__footer {
   width: 100%;
 

@@ -431,6 +431,11 @@ section {
   animation-fill-mode: forwards;
 }
 
+
+.text-center > button {
+  margin-top: 20px;
+  width: 150px;
+}
 @keyframes fadeOutAndScale {
   0% {
     opacity: 1;
