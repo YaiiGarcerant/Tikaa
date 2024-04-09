@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
     body {
       background-color: aliceblue;
 
@@ -17,20 +19,21 @@
     }
 
     .container {
-      display: flex;
-      justify-content: center;
-
+      position: absolute;
+      top: 5%;
+      left: calc(100% - 70%);
+      width: 250px;
+      height: 450
     }
 
     button {
-      position: absolute;
-      top: 50%;
       width: 250px;
       height: 50px;
       background-color: #FBC329;
       border: none;
       border-radius: 15px;
       font-weight: bold;
+      margin: 20px;
 
     }
 
@@ -39,11 +42,53 @@
       color: rgb(255, 255, 255);
       font-size: 28px;
     }
-        </style>
-        <div class="container">
-            <button type="button">
-                <a href="./view/login.html"> Bienvenido a tika</a>
-            </button>
-        </div>
-    </body>
+
+  </style>
+  <div class="container">
+    <button type="button">
+      <a href="view/login.html">
+        Login
+      </a>
+    </button>
+
+    <button type="button">
+      <a href="view/register.html">
+        Registrar
+      </a>
+    </button>
+
+    <button type="button">
+      <a href="view/dashboard.html">
+        Dasboard
+      </a>
+    </button>
+
+    <button type="button">
+      <a href="view/perfile.html">
+        Perfil
+      </a>
+    </button>
+    <button type="button">
+      <a href="view/progreso.html">
+        Progreso
+      </a>
+    </button>
+
+    <button type="button">
+      <a href="musica/index.html">
+        Musica
+      </a>
+    </button>
+
+    <button type="button">
+      <a href="cuento/index.html">
+        Cuentos
+      </a>
+    </button>
+
+
+
+  </div>
+</body>
+
 </html>

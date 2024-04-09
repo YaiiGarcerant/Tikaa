@@ -35,12 +35,12 @@
           <div class="mi__perfil">
             <h1>mi perfil</h1>
             <div class="icon__perfil">
-              <img src="../asset/img/ayuda.svg" alt="">
-              <img src="../asset/img/ajuste.svg" alt="">
+              <i class="fs-3 fw-bolder bi bi-question-circle"></i>
+              <i class="fs-3 fw-bolder bi bi-gear"></i>
             </div>
           </div>
           <div class="section__perfil">
-            <img src="../asset/img/author.png" alt="">
+            <img src="../asset/img/author.svg" alt="">
             <div class="container__text__author">
               <div class="text__img__perfil">
                 <h4 class="fw-semibold">Hola, Cristian</h4>
@@ -51,9 +51,9 @@
               <div class="container__perfil">
                 <div class="perfil__ir">
                   <i class="mb-4 bi bi-pencil"></i>
-                  
-                  <p class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <a href="">Editar Perfil</a>
+
+                  <p class="text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="#">Editar Perfil</a>
                   </p>
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -64,99 +64,95 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <div
-                            style="width:100%; margin-top:3rem; padding:1rem; display:flex; flex-direction:column; text-align:left;">
-                            <img src="../asset/img/author.png" style="width: 5rem; height: auto; margin-bottom: 10px;"
-                              alt="">
-                            <p style="margin-left:15px;">editar</p>
+                          <div class="img-modal">
+                            <img src="../asset/img/author.svg" alt="">
+                            <p class="ms-4">editar</p>
                           </div>
-                          <div>
-                            <form class="formulario" action=""
-                              style="width:100%; display:flex; flex-direction:column; border-radius:15px;  gap:1rem; text-align:left; margin-top:1rem; justify-content: flex-start;">
-                              <label for="">Nombre</label>
-                              <input
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Cristian Villamizar">
-                              <label for="">E-mail</label>
-                              <input
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="cristian.villamizar@email.com">
-                              <label for="">Meta/Objetivo principal</label>
-                              <input
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Mi objetivo es...">
-                              <label for="">Edad</label>
-                              <input
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Mi edad">
-                              <label for="">Nivel</label>
-                              <select name="nivel" id="nivel"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                          <form class="formulario" action="">
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Nombre</label>
+                              <input class="form-control rounded-4 shadow-sm" id="name" type="text" value=""
+                                placeholder="Cristian Villamizar" name="name" required>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">E-mail</label>
+                              <input class="form-control rounded-4 shadow-sm" id="email" type="text" value=""
+                                placeholder="cristian.villamizar@email.com" name="email" required>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Meta/Objetivo principal</label>
+                              <input class="form-control rounded-4 shadow-sm" id="meta" type="text" value=""
+                                placeholder="Mi objetivo es..." name="meta" required>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Edad</label>
+                              <input class="form-control rounded-4 shadow-sm" id="edad" type="text" value=""
+                                placeholder="Mi edad" name="edad" required>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Nivel</label>
+                              <select class="form-select rounded-4 shadow-sm" name="nivel" id="nivel">
+                                <option selected disabled value="">Principiante, intermedio, avanzado...</option>
                                 <option value="principiante">Principiante</option>
                                 <option value="intermedio">Intermedio</option>
                                 <option value="avanzado">Avanzado</option>
                               </select>
-                              <label for="">Duración diaria practica</label>
-                              <select name="diario" id="diario"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Duración diaria practica</label>
+                              <select class="form-select rounded-4 shadow-sm" name="duracion" id="objetive">
+                                <option selected disabled value="">2 horas</option>
                                 <option value="principiante">diario</option>
                               </select>
-                              <label for="">Consentimiento</label>
-                              <select name="consentimiento" id="consentimiento"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Consentimiento</label>
+                              <select class="form-select  rounded-4 shadow-sm" name="consentimiento" id="objetive">
+                                <option selected disabled value="">Consentimiento</option>
                                 <option value="principiante">Consentimiento</option>
                               </select>
-                              <label for="">Alarma de práctica</label>
-                              <select name="Alarma" id="alarma"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                            </div>
+
+
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Alarma de práctica</label>
+                              <select class="form-select rounded-4 shadow-sm" name="alarma" id="objetive">
+                                <option selected disabled value="">Alarma de práctica</option>
                                 <option value="principiante">Alarma practica</option>
                               </select>
-                              <label for="">Notificación push</label>
-                              <select name="notificacion" id="notificacion"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                            </div>
+
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Notificaciones Push</label>
+                              <select class="form-select  rounded-4 shadow-sm" name="notificaciones" id="objetive">
+                                <option selected disabled value="">Notificación push y por correo</option>
                                 <option value="principiante">notificaion push y por correo</option>
                               </select>
-                              <label for="">Idioma</label>
-                              <select name="español" id="español"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Idioma</label>
+                              <select class="form-select  rounded-4 shadow-sm" name="idioma" id="objetive">
+                                <option selected disabled value="">Selecciona una opción</option>
                                 <option value="español">Español</option>
                                 <option value="portugues">Portugues</option>
                                 <option value="italiano">Italiano</option>
                               </select>
-                              <label for="">versiones</label>
-                              <select name="versiones" id="versiones"
-                                style="height:2rem; border-radius:10px; border:1px gray solid;  border:none; background-color:#e3e5eb; padding:2rem;"
-                                type="text" placeholder="Principiante, intermedio, avanzado..">
-                                <option value="">Selecciona una opción</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            </div>
+                            <div class="ms-2 mb-2">
+                              <label class="fs-6 mb-2 fw-medium" for="">Version</label>
+                              <select class="form-select  rounded-4 shadow-sm" name="version" id="objetive">
+                                <option selected disabled value="">Selecciona una opción</option>
+                                <option value="1">V 1.0</option>
+                                <option value="2">V 2.0</option>
+                                <option value="3">V 3.0</option>
                               </select>
-                            </form>
-                          </div>
-                          <div
-                            style="width:100%; padding:1rem; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1rem; margin-top:2rem;">
-                            <button
-                              style="height:3rem;background-color:transparent; width:100%; border:1px solid; border-radius:15px">Cerrar
-                              sesión</button>
-                            <button
-                              style="height:3rem;background-color:transparent; width:100%; border:1px solid; border-radius:15px">Términos
-                              y privacidad</button>
-                            <button
-                              style="height:3rem;background-color:transparent; width:100%; border:1px solid red; color:red;  border-radius:15px">Borrar
-                              la cuenta</button>
+                            </div>
+
+                          </form>
+                          <div class="button-container">
+                            <button class="button">Cerrar sesión</button>
+                            <button class="button">Términos y privacidad</button>
+                            <button class="button button-red">Borrar la cuenta</button>
                           </div>
                         </div>
                         <div class="modal-footer">
@@ -165,183 +161,185 @@
                       </div>
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </div>
+             </div>
+
+            <div class="container__logros">
+              <div class="logros">
+                <div class="items me-2">
+                  <img class="icon__perfil alinear" src="../asset/img/Vector3.svg" alt="">
+                  <div class="box">
+                    <p class="box__numb">6</p>
+                  </div>
+                </div>
+                <div class="items  me-2">
+                  <img class="icon__perfil alinear" src="../asset/img/certificado.svg" alt="">
+                  <div class="box">
+                    <p class="box__numb">6</p>
+                  </div>
+                </div>
+                <div class="items  me-2">
+                  <img class="icon__perfil alinear" src="../asset/img/estrellas.svg" alt="">
+                  <div class="box">
+                    <p class="box__numb">6</p>
+                  </div>
+                </div>
+                <div class="ms-2 items">
+                  <img class="icon__perfil alinear" src="../asset/img/info-bold.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="container__3">
+              <div class="principal__card">
+                <div class="img__text">
+                  <img class="oveja" src="../asset/img/oveja 2.svg" alt="">
+                </div>
+                <div class="img__text__2">
+                  <div class="text__p">
+                    <p>
+                      <span>Practica cada día</span> para que tu racha no reinicie
+                    </p>
+                  </div>
+                  <img class="off" src="../asset/img/off.svg" alt="">
+                </div>
+              </div>
+              <div class="semana">
+                <div class="dia">
+                  <p>Lun</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Mar</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Mier</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Jue</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Vie</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Sab</p>
+                  <div class="box__day"></div>
+                </div>
+                <div class="dia">
+                  <p>Dom</p>
+                  <div class="box__day"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container__2">
+            <div class="card">
+              <div class="items-2">
+                <h3>cuentos</h3>
+                <img class="img__card" src="../asset/img/cuento.png" alt="">
+              </div>
+              <div class="items-2">
+                <h3>musica</h3>
+                <img class="img__card" src="../asset/img/auriculares.png" alt="">
+              </div>
+              <div class="items-2">
+                <h3>juegos</h3>
+                <img class="img__card" src="../asset/img/juegos.png" alt="">
+              </div>
+              <div class="items-2">
+                <h3>idiomas</h3>
+                <img class="img__card" src="../asset/img/traducir.png" alt="">
+              </div>
+            </div>
+            <div class="statistics">
+              <div class="container__card">
+                <div class="card__statistics">
+                  <img class="barra" src="../asset/img/barra.svg" alt="">
+                  <h4 class="progreso  pb-3">PROGRESO</h4>
+                  <h2 class="cincuenta">50%</h2>
+                </div>
+                <div class="card__statistics">
+                  <img class="tikastar" src="../asset/img/tikastar.svg" alt="">
+                  <h4 class="progreso pb-3">TIKASTARS</h4>
+                  <h2 class="cincuenta">2.500</h2>
+                </div>
+              </div>
+              <div class="Insignias">
+                <div class="container_text_insignias">
+                  <img class="insignia__2" src="../asset/img/certificado.svg" alt="">
+                  <h2 class="text__insignias">INSIGNIAS</h2>
+                </div>
+                <div class="container__insignias">
+                  <div class="img__text__insignias">
+                    <div class="container__libro">
+                      <img class="libro" src="../asset/img/libro.svg" alt="">
+                      <div class="text__libro">
+                        <h6>Lector experto</h6>
+                        <p>Descubre historias asombrosas</p>
+                      </div>
+                    </div>
+                    <img src="../asset/img/close.svg" alt="">
+                  </div>
+                  <div class="img__text__insignias">
+                    <div class="container__libro">
+                      <img class="libro" src="../asset/img/certificado_icon.svg" alt="">
+                      <div class="text__libro">
+                        <h6>Lector experto</h6>
+                        <p>Descubre historias asombrosas</p>
+                      </div>
+                    </div>
+                    <img src="../asset/img/close.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container__video">
+              <button class="volver">
+                <img src="../asset/img/volver.svg" alt="">
+                Volver al menu
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- / Layout page -->
+      </div>
+    </div>
+    <footer>
+      <div class="container__footer">
+        <div class="items__footer active ">
+          <div class="container ps-2 pe-2 rounded-pill bg-body-secondary ">
+            <img class="mb-1 ms-2 me-2" src="../asset/img/casa.svg" alt="">
+          </div>
+          <a class="text-dark" href="dashboard.html">Home</a>
+        </div>
+        <div class="items__footer">
+          <div class="ms-2 container">
+            <img src="../asset/img/tienda.svg" alt="">
+
+          </div>
+          <a href="">Tikashop</a>
+        </div>
+        <div class="items__footer">
+          <div class="ms-2 container mb-1">
+            <img src="../asset/img/desafios.svg" alt="">
           </div>
 
-          <div class="container__logros">
-            <div class="logros">
-              <div class="items me-2">
-                <img class="icon__perfil alinear" src="../asset/img/Vector3.svg" alt="">
-                <div class="box">
-                  <p class="box__numb">6</p>
-                </div>
-              </div>
-              <div class="items  me-2">
-                <img class="icon__perfil alinear" src="../asset/img/certificado.svg" alt="">
-                <div class="box">
-                  <p class="box__numb">6</p>
-                </div>
-              </div>
-              <div class="items  me-2">
-                <img class="icon__perfil alinear" src="../asset/img/estrellas.svg" alt="">
-                <div class="box">
-                  <p class="box__numb">6</p>
-                </div>
-              </div>
-              <div class="ms-2 items">
-                <img class="icon__perfil alinear" src="../asset/img/info-bold.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="container__3">
-            <div class="principal__card">
-              <div class="img__text">
-                <img class="oveja" src="../asset/img/oveja 2.svg" alt="">
-              </div>
-              <div class="img__text__2">
-                <div class="text__p">
-                  <p>
-                    <span>Practica cada día</span> para que tu racha no reinicie
-                  </p>
-                </div>
-                <img class="off" src="../asset/img/off.svg" alt="">
-              </div>
-            </div>
-            <div class="semana">
-              <div class="dia">
-                <p>Lun</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Mar</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Mier</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Jue</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Vie</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Sab</p>
-                <div class="box__day"></div>
-              </div>
-              <div class="dia">
-                <p>Dom</p>
-                <div class="box__day"></div>
-              </div>
-            </div>
-          </div>
+          <a href="">Desafios</a>
         </div>
-        <div class="container__2">
-          <div class="card">
-            <div class="items-2">
-              <h3>cuentos</h3>
-              <img class="img__card" src="../asset/img/cuento.svg" alt="">
-            </div>
-            <div class="items-2">
-              <h3>musica</h3>
-              <img class="img__card" src="../asset/img/auriculares.svg" alt="">
-            </div>
-            <div class="items-2">
-              <h3>juegos</h3>
-              <img class="img__card" src="../asset/img/juegos.svg" alt="">
-            </div>
-            <div class="items-2">
-              <h3>idiomas</h3>
-              <img class="img__card" src="../asset/img/traducir.svg" alt="">
-            </div>
+        <div class="items__footer">
+          <div class="mb-1 container">
+            <img src="../asset/img/mas.svg" alt="">
           </div>
-          <div class="statistics">
-            <div class="container__card">
-              <div class="card__statistics">
-                <img class="barra" src="../asset/img/barra.svg" alt="">
-                <h4 class="progreso  pb-3">PROGRESO</h4>
-                <h2 class="cincuenta">50%</h2>
-              </div>
-              <div class="card__statistics">
-                <img class="tikastar" src="../asset/img/tikastar.svg" alt="">
-                <h4 class="progreso pb-3">TIKASTARS</h4>
-                <h2 class="cincuenta">2.500</h2>
-              </div>
-            </div>
-            <div class="Insignias">
-              <div class="container_text_insignias">
-                <img class="insignia__2" src="../asset/img/certificado.svg" alt="">
-                <h2 class="text__insignias">INSIGNIAS</h2>
-              </div>
-              <div class="container__insignias">
-                <div class="img__text__insignias">
-                  <div class="container__libro">
-                    <img class="libro" src="../asset/img/libro.svg" alt="">
-                    <div class="text__libro">
-                      <h6>Lector experto</h6>
-                      <p>Descubre historias asombrosas</p>
-                    </div>
-                  </div>
-                  <img src="../asset/img/close.svg" alt="">
-                </div>
-                <div class="img__text__insignias">
-                  <div class="container__libro">
-                    <img class="libro" src="../asset/img/certificado_icon.svg" alt="">
-                    <div class="text__libro">
-                      <h6>Lector experto</h6>
-                      <p>Descubre historias asombrosas</p>
-                    </div>
-                  </div>
-                  <img src="../asset/img/close.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container__video">
-            <button class="volver">
-              <img src="../asset/img/volver.svg" alt="">
-              Volver al menu
-            </button>
-          </div>
+
+          <a href="">Mas</a>
         </div>
       </div>
-      <!-- / Layout page -->
-    </div>
-  </div>
-  <footer>
-    <div class="container__footer">
-      <div class="items__footer">
-        <div class="container">
-          <img class="" src="../asset/img/casa.svg" alt="">
-        </div>
-        <a class="" href="dashboard.html">Home</a>
-      </div>
-      <div class="items__footer">
-        <div class=" ms-2 container">
-          <img src="../asset/img/tienda.svg" alt="">
-        </div>
-        <a href="">Tikashop</a>
-      </div>
-      <div class="items__footer">
-        <div class="container">
-          <img src="../asset/img/desafios.svg" alt="">
-        </div>
-        <a href="">Desafios</a>
-      </div>
-      <div class="items__footer">
-        <div class="container">
-          <img src="../asset/img/mas.svg" alt="">
-        </div>
-        <a href="">Mas</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
