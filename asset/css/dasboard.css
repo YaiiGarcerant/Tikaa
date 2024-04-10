@@ -10,6 +10,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin-bottom: 4rem; /* Ajusta este valor según el tamaño de tu pie de página */
+}
+
+
 a {
   color: #565656;
   font-weight: 500;
@@ -438,6 +444,7 @@ progress[value]::-webkit-progress-value {
 }
 
 
+
 footer {
   width: 100%;
   padding: 1rem;
@@ -445,6 +452,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
+  position: fixed;
+  bottom: 0;
 }
 
 footer a {

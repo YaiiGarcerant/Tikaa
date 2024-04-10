@@ -15,6 +15,10 @@
 
 }
 
+body {
+  margin-bottom: 4rem; /* Ajusta este valor según el tamaño de tu pie de página */
+}
+
 
 
 .layout-page{
@@ -242,6 +246,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
+  position: fixed;
+  bottom: 0;
 }
 
 

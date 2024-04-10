@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin-bottom: 6rem; /* Ajusta este valor según el tamaño de tu pie de página */
+}
+
 .img-modal {
   width: 100%;
   padding: 1rem;
@@ -540,6 +544,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
+  position: fixed;
+  bottom: 0;
 }
 
 
