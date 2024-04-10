@@ -28,6 +28,9 @@ body {
   /* Ajusta este valor según el tamaño de tu pie de página */
 }
 
+div + nav{
+  margin-top: -5px;
+}
 
 .layout-page {
   display: flex;

@@ -13,8 +13,9 @@
 }
 
 body {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
+
 
 .title-edit {
   font-family: 'Montserrat';
@@ -64,6 +65,11 @@ a {
   align-items: center;
   color: black;
 }
+
+div + nav{
+  margin-top: -5px;
+}
+
 
 nav {
   background-color: white;

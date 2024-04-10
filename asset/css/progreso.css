@@ -15,7 +15,11 @@
 }
 
 body {
-  margin-bottom: 6rem; /* Ajusta este valor según el tamaño de tu pie de página */
+  margin-bottom: 6rem; 
+}
+
+div + nav{
+  margin-top: -5px;
 }
 
 .img-modal {
