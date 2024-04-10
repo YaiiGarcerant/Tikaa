@@ -2,7 +2,7 @@
 let form = document.querySelector('#form-register');
 let progressOptions = document.querySelectorAll('.progressbar__option');
 
-form.addEventListener('click', function(e) {
+form.addEventListener('click', function (e) {
     let element = e.target;
     let isButtonNext = element.classList.contains('step__button--next');
     let isButtonBack = element.classList.contains('step__button--back');
@@ -27,5 +27,16 @@ form.addEventListener('click', function(e) {
         jumpStep.classList.remove('inactive');
     }
 });
-//
 
+  
+
+function mostrarContenidoSubmenu(contenido) {
+  // Ocultar todos los contenidos
+  let contenidos = document.getElementsByClassName("contenido");
+  for (let i = 0; i < contenidos.length; i++) {
+      contenidos[i].style.display = "none";
+  }
+
+  // Mostrar el contenido correspondiente
+  document.getElementById("contenido-" + contenido).style.display = "block";
+}

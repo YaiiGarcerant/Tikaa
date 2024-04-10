@@ -12,7 +12,7 @@
 }
 
 body {
-  margin-bottom: 4rem; /* Ajusta este valor según el tamaño de tu pie de página */
+  margin-bottom: 5rem;
 }
 
 
@@ -20,6 +20,7 @@ a {
   color: #565656;
   font-weight: 500;
 }
+
 .layout-page {
   display: flex;
   flex-direction: column;
@@ -480,7 +481,6 @@ footer a {
 
 @media screen and (max-width:670px) {
   .container__principal {
-    width: 100%;
     padding: 1rem;
   }
 
