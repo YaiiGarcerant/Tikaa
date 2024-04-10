@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard - Tikamus</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="../asset/img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../asset/js/app.js">
+  <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <script src="../asset/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../asset/css/perfil.css">
+</head>
+
+<body>
+  <div class="layout-wrapper layout-content-navbar d-flex flex-column">
+    <div class="layout-container">
+      <div class="layout-page ">
+        <nav class="border-bottom navbar d-flex justify-content-center">
+          <a class="navbar-brand" href="#">
+            <img src="../asset/img/TikamusVol1 solo.svg" alt="">
+          </a>
+        </nav>
+        <div class="w-100">
+          <div class="container-edit">
+            <div class="img-modal d-flex justify-content-center">
+              <img src="../asset/img/author.svg" alt="">
+         
+            </div>
+          </div>
+          <div class="container mt-5">
+            
+            <div class="border-bottom">
+               <h4 class="title-edit">Informacion Personal</h4>
+            </div>
+    
+            <form class="row mt-4 needs-validation" novalidate action="">
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Nombre</label>
+                  <input class="form-control rounded-4 shadow-sm" id="name" type="text" value=""
+                    placeholder="Cristian Villamizar" name="name" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">E-mail</label>
+                  <input class="form-control rounded-4 shadow-sm" id="email" type="text" value=""
+                    placeholder="cristian.villamizar@email.com" name="email" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Edad</label>
+                  <input class="form-control rounded-4 shadow-sm" id="edad" type="text" value="" placeholder="Mi edad"
+                    name="edad" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Meta/Objetivo principal</label>
+                  <input class="form-control rounded-4 shadow-sm" id="meta" type="text" value=""
+                    placeholder="Mi objetivo es..." name="meta" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Nivel</label>
+                  <select class="form-select rounded-4 shadow-sm" name="nivel" id="nivel">
+                    <option selected disabled value="">Principiante, intermedio, avanzado...</option>
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Consentimiento</label>
+                  <select class="form-select  rounded-4 shadow-sm" name="consentimiento" id="objetive">
+                    <option selected disabled value="">Consentimiento</option>
+                    <option value="principiante">Consentimiento</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Duración diaria practica</label>
+                  <select class="form-select rounded-4 shadow-sm" name="duracion" id="objetive">
+                    <option selected disabled value="">2 horas</option>
+                    <option value="principiante">diario</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Alarma de práctica</label>
+                  <select class="form-select rounded-4 shadow-sm" name="alarma" id="objetive">
+                    <option selected disabled value="">Alarma de práctica</option>
+                    <option value="principiante">Alarma practica</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Notificaciones Push</label>
+                  <select class="form-select  rounded-4 shadow-sm" name="notificaciones" id="objetive">
+                    <option selected disabled value="">Notificación push y por correo</option>
+                    <option value="principiante">notificaion push y por correo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Idioma</label>
+                  <select class="form-select  rounded-4 shadow-sm" name="idioma" id="objetive">
+                    <option selected disabled value="">Selecciona una opción</option>
+                    <option value="español">Español</option>
+                    <option value="portugues">Portugues</option>
+                    <option value="italiano">Italiano</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-2 mt-2">
+                  <label class="fs-6 mb-2 fw-medium" for="">Version</label>
+                  <select class="form-select  rounded-4 shadow-sm" name="version" id="objetive">
+                    <option selected disabled value="">Selecciona una opción</option>
+                    <option value="1">V 1.0</option>
+                    <option value="2">V 2.0</option>
+                    <option value="3">V 3.0</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div class="button-container d-flex mt-3">
+              <button class="button bg-transparent border border-secondary text-dark fw-semibold">Cerrar sesión</button>
+              <button class="button bg-transparent border border-secondary text-dark fw-semibold">Términos y privacidad</button>
+              <button class="button bg-transparent border border-danger-subtle text-danger fw-semibold">Borrar la cuenta</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <footer class="border-top">
+    <div class="container__footer">
+      <div class="items__footer active ">
+        <div class="container ps-2 pe-2 rounded-pill bg-body-secondary ">
+          <img class="mb-1 ms-2 me-2" src="../asset/img/casa.svg" alt="">
+        </div>
+        <a class="text-dark" href="dashboard.html">Home</a>
+      </div>
+      <div class="items__footer">
+        <div class="ms-2 container">
+          <img src="../asset/img/tienda.svg" alt="">
+
+        </div>
+        <a href="">Tikashop</a>
+      </div>
+      <div class="items__footer">
+        <div class="ms-2 container mb-1">
+          <img src="../asset/img/desafios.svg" alt="">
+        </div>
+
+        <a href="">Desafios</a>
+      </div>
+      <div class="items__footer">
+        <div class="mb-1 container">
+          <img src="../asset/img/mas.svg" alt="">
+        </div>
+
+        <a href="">Mas</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
